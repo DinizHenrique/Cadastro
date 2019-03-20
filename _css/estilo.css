@@ -1,0 +1,132 @@
+.btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+
+.btn-group-justified .btn,
+.btn-group-justified .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+}
+
+.btn-group-justified .btn .btn,
+.btn-group-justified .btn-group .btn {
+    width: 100%;
+}
+
+.btn-group-justified .btn .dropdown-menu,
+.btn-group-justified .btn-group .dropdown-menu {
+    left: auto;
+}
+
+@font-face {
+    font-family: Adam-test;
+    src: url(resource/fonts/adam.otf);
+}
+
+@font-face {
+    font-family: Simplifica;
+    src: url(resource/fonts/simplifica.ttf);
+}
+
+div.container {
+    padding-top: auto;
+     
+
+}
+
+
+
+.navbar-default {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+
+
+
+}
+
+footer {
+
+    flex-shrink: 0;
+
+
+    width: 100%;
+
+
+    font-size: 0.90em;
+    text-align: center;
+    background-color: #ECECEC;
+    padding: 5px;
+
+
+}
+
+footer div {
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+footer div img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer div a img {
+    width: 40px;
+
+}
+
+main {
+    background: #f2f2f2;
+    flex-grow: 1;
+
+
+}
+
+nav section div ul li {
+    font-size: 20px;
+}
+
+#caixa{
+    margin-top: 15px;
+    
+}
+
+div.card-header{
+    background-image: linear-gradient(to right, #1c92d2, #6DD5FA, #FFFFFF);
+    
+}
+
+form#cadastro {
+    
+    padding: 10px;
+}
+
+div#box-cadastro {
+    margin: 10px;
+}
+
+#botao {
+    margin: 100px;
+}
+
+#formrow{
+    margin: 10px;
+}
+
+
+

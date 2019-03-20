@@ -1,0 +1,29 @@
+section#topo {
+    text-align: center;
+}
+
+main {
+    justify-content: center;
+}
+
+body {
+    
+    background-image: url("../ordem-servico/img/fundo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 297mm;
+    
+    margin-left: 10px;
+
+    background-size: auto;
+    
+    
+}
+
+p {
+    font-size: 14px;
+}
+
+li {
+    font-size: 13px;
+}

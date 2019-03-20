@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mpdf/mpdf": "^7.1",
+        "wgenial/numeroporextenso": "^2.0"
+    }
+}

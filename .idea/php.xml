@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/recibo/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/recibo/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/recibo/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/recibo/vendor/wgenial/numeroporextenso" />
+      <path value="$PROJECT_DIR$/recibo/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/recibo/vendor/composer" />
+      <path value="$PROJECT_DIR$/recibo/vendor/setasign/fpdi" />
+    </include_path>
+  </component>
+</project>

@@ -1,0 +1,152 @@
+<?php require_once("../conexao/conexao.php"); ?>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gerar Recibo - UniSom</title>
+    <meta name="language" content="portuguese" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+
+    <link href="../resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../_css/estilo.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top navbar-light" style="background-color: #e3f2fd">
+            <section class="container">
+                <a href="#" class="navbar-brand"><img src="../_img/logo.png" width="160px"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movelmenu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="movelmenu">
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item"><a class="nav-link" href="../relatorio/checkRelatorio.php ">Relatório</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../cadastro/index.php ">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pesquisa/index.php">Pesquisa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../ordem-servico/index.php">Ordem de Serviço</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../recibo/index.php">Recibo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../etiqueta/index.php">Etiqueta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../backup/index.php">Backup</a></li>
+
+                    </ul>
+                </div>
+
+            </section>
+        </nav>
+
+        <!-- Digite abaixo seu codigo -->
+
+        <!-- Digite abaixo seu codigo -->
+
+        <div class="container-fluid">
+
+            <div class="card" id="box-cadastro">
+                <div class="card-header">
+                    <h2>Gerar Recibo</h2>
+                </div>
+
+                <form id="cadastro" class="form-inline" action="pesquisa.php" method="POST">
+                    <div class="input-group col-md-5">
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nome e parcelas</span>
+                        </div>
+                        <input name="nome" type="text" aria-label="Nome" class="form-control">
+                        <select name="parcelas" class="form-control col-md-2" id="parcelas">
+                            <option value="1">À vista</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+
+                        <div class="input-group-prepend">
+                            <input class="btn btn-primary" type="submit" id="button-addon1" value="Gerar">
+                        </div>
+                    </div>
+                    <div class="form-group form-check">
+                        <input name="cheque" type="checkbox" class="form-check-input" id="cheque">
+                        <label  class="form-check-label" for="cheque">Pagamento com Cheque</label>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+            <div class="card" id="box-cadastro">
+                <div class="card-header">
+                    <h2>Buscar Recibo</h2>
+                </div>
+
+                <form id="cadastro" class="form-inline" action="pesquisa_recibo.php" method="POST">
+                    <div class="form-group mb-2">
+                        <label for="staticEmail2" class="sr-only">Número do Recibo</label>
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Número do Recibo">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="reciboID">
+                        <div class="input-group-prepend">
+                            <input class="btn btn-primary" type="submit" id="reciboID" value="Pesquisar">
+                        </div>
+                    </div>
+                </form>
+
+                <form id="cadastro" class="form-inline" action="pesquisa_recibo.php" method="POST">
+                    <div class="form-group mb-2">
+                        <label for="staticEmail2" class="sr-only">Nome</label>
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Nome">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="nome">
+                        <div class="input-group-prepend">
+                            <input class="btn btn-primary" type="submit" id="button-addon1" value="Pesquisar">
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <?php include_once("../resource/elementos/footer.html"); ?>
+
+
+
+    <!-- Fim do seu codigo -->
+    <script src="../resource/js/jquery.js"></script>
+    <script src="../resource/js/bootstrap.bundle.js"></script>
+    <script src="../resource/js/bootstrap.min.js"></script>
+
+    <script src="../recibo/_js/script.js"></script>
+
+</body>
+
+</html>
+
+
+<?php
+    // Fechar conexao
+    mysqli_close($conecta);
+?>

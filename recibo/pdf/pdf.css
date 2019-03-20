@@ -1,0 +1,91 @@
+section#topo {
+    text-align: center;
+    background-color: aliceblue;
+    width: 200mm;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+section#topo p {
+    margin: -5px;
+}
+
+section#topo h3 {
+    margin: -1px;
+}
+
+section.corpo {
+    width: 200mm;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 10px;
+    white-space: pre;
+    word-break:break-all;
+}
+
+
+
+body {
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 297mm;
+    
+    margin-left: 10px;
+
+    background-size: auto;
+    
+    
+}
+
+u { 
+  text-decoration: underline;
+}
+
+p.corpo {
+    font-size: 16px;
+    white-space: pre;
+}
+
+pre {
+    font-size: 16px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+
+  text-align: left;
+  padding: 8px;
+  
+}
+
+td#cab_left{
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    border:none;
+    padding: 1px;
+}
+
+td#cab_right{
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    border:none;
+    padding: 1px;
+}
+
+.signature {
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+
